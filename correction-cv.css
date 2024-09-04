@@ -1,0 +1,329 @@
+/*:root{
+
+}*/
+
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 200 to 800
+
+.dosis {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+body{
+    font-family: "Dosis", sans-serif;
+    display: flex;
+    gap: 5vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    align-items: stretch;
+}
+
+#leftpart{
+    flex-basis: 30vw;
+    background: linear-gradient(to top, #c4bcb6, #DAC6B5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px 1px 1px 15px;
+    box-shadow: -0.8vw 1vh #c4bcb6;
+}
+
+/*#leftpart *{
+    color: var();
+}*/
+
+#header-leftpart{
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+#img-profil{
+    width: 15vw;
+    margin-bottom: 10vh;
+}
+
+.infos{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-value{
+    text-overflow: ellipsis;
+}
+
+#info-leftpart{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin-top: 1vh;
+}
+
+.info-name{
+    width: 15vw;
+}
+
+.btn-hobbies{
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 3px 25px 3px 25px;
+    padding: 1vh;
+    width: 15vw;
+}
+
+#group-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+
+#hobbies-leftpart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reseaux-leftpart{
+    gap: 1vh;
+    padding: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reseaux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+
+#rightpart{
+    flex-basis: 55vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    justify-content: space-between;
+}
+
+/*#rightpart > div{
+    border: 2px solid;
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: 0.5vw 1vh ;
+}*/
+
+#formation-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#experiences-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#competences-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-formations, .content-formations{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+    width: 60%;
+}
+
+.formations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border-bottom: 2px solid;
+    gap:2vh;
+    padding-bottom: 1vh;
+}
+
+.intitule-formations, .centre-formations{
+    flex-basis: 60%;
+}
+
+.header-experiences, .content-experiences{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+    width: 60%; 
+}
+
+#formation-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    padding-bottom: 2vh;
+}
+
+.experiences{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding-top: 2vh;
+    border-bottom: 2px solid;
+    padding-bottom: 1vh;
+}
+
+.intitule-experiences{
+    text-align: end;
+}
+
+.date-experiences{
+    flex-basis: 60%;
+}
+
+.entreprise-experiences, .list-missions{
+    width: 60%;
+}
+
+.experiences-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.competences{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.competences > img{
+    width: 8vw;
+}
+
+.competences > h3{
+    width: 4vw;
+
+}
+
+.range{
+    margin-left: 1vw;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+#quatre-vingt{
+    background-color: rgb(141, 28, 28);
+    border-radius: 25px;
+    width: 80%;
+}
+
+@media (max-width: 680px){
+    body{
+        flex-direction: column;
+    }
+
+    #hobbies-leftpart{
+        margin-top: 5vh;
+    }
+
+    #img-profil{
+        margin-top: 10vh;
+        width: 40vw;
+    }
+
+    /*#group-btn{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }*/
+
+    .btn-hobbies{
+        border-radius: 0px 10px 0px 10px;
+    }
+
+    #leftpart{
+        border-radius: 20px;
+        box-shadow: none;
+    }
+
+    .header-formations, .content-formations{
+        width: 90%;
+    }
+
+    .intitule-formations, .date-formations, .ville-formations, .centre-formations{
+        flex-basis: auto;
+    }
+
+    .formations, .experiences, .header-experiences{
+        width: 95%;
+    }
+
+    .entreprise-experiences, .list-missions{
+        width: auto;
+    }
+
+    .formations, .experiences{
+        width: 95%;
+        padding: 2vh 1vw;
+        font-size: 1rem;
+    }
+
+    .header-experiences{
+        align-items: center;
+        padding: 1vh 1vw;
+        margin-left: 1vh;
+        border-bottom: 1px solid;
+    }
+
+    .competences{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .competences > img{
+        width: 20vw;
+    }
+
+    .competences > h3{
+        width: auto;
+        display: none;
+    }
+
+    .range{
+        width: 100%;
+        margin-bottom: 7vh;
+    }
+
+
+
+
+}
