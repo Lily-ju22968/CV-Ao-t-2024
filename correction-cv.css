@@ -240,10 +240,52 @@ h2{
     border-radius: 25px;
 }
 
+#cinquante{
+    background-color: #DAC6B5;
+    color: #DAC6B5;
+    border-radius: 25px;
+    width: 50%;
+    animation: animateSkills-cinquante 2s;
+}
+
+
 #quatre-vingt{
-    background-color: rgb(141, 28, 28);
+    background-color: #DAC6B5;
+    color: #DAC6B5;
     border-radius: 25px;
     width: 80%;
+    animation: animateSkills-quatre-vingt 2s;
+}
+
+#soixante{
+    background-color: #DAC6B5;
+    color: #DAC6B5;
+    border-radius: 25px;
+    width: 60%;
+    animation: animateSkills-soixante 2s;
+}
+
+
+
+@keyframes animateSkills-quatre-vingt {
+    from {
+        width: 0%;}
+    to {
+        width: 80%;}
+}
+
+@keyframes animateSkills-cinquante {
+    from {
+        width: 0%;}
+    to {
+        width: 50%;}
+}
+
+@keyframes animateSkills-soixante {
+    from {
+        width: 0%;}
+    to {
+        width: 60%;}
 }
 
 @media (max-width: 680px){
